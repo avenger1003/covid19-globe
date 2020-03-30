@@ -1,1 +1,1 @@
-<?php header("Location: /covid19-globe.html"); ?>
+<?php include_once("./covid19-globe.html"); ?>
