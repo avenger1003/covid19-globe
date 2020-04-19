@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Covid 19 Interactive view</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.48.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
     <script type="text/javascript" src="./src/pooch.js"></script>
     <script type="text/javascript" src="./data/world-shapes.js"></script>
     <script type="text/javascript" src="./data/world-data.js"></script>
@@ -9,14 +14,26 @@
 
   <body onload="adjustLayout()">
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <script id="popupLayout1" type="text/html"></script>
 
     <div class="pooch-title" style="margin-bottom:24px">Covid19 Interactive View<span style="font-size:18px;color:#AAA;"> &nbsp;(click / drag to rotate)</span></div>
     
-    <div id="pooch_stage" class="pooch-stage" style="height:500px"></div>
+    <!-- <div class="conatiner">
+      <div class="row"> -->
+        <!-- <div class="col-3"> -->
+          <div class="pooch-button-container">
+            <button class="pooch-button" onclick="spinToLocation (1.325, 0.425, 'IN')">India</button>
+            <button class="pooch-button" onclick="spinToLocation (57.666, 0.425, 'IT')">Italy</button>
+            <button class="pooch-button" onclick="spinToLocation (-1.634, 0.35, 'MEX')">mexico</button>
+            <button class="pooch-button" onclick="spinToLocation (0.03, 0.7, 'FRA')">france</button>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="col-9"> -->
+          <div id="pooch_stage" class="pooch-stage" style="height:500px"></div>
+        <!-- </div> -->
+      <!-- </div> 
+    </div> -->
 
     <script type="text/javascript">
 
@@ -178,13 +195,6 @@
       }
 
     </script>
-
-    <div class="pooch-button-container">
-      <button class="pooch-button" onclick="spinToLocation (1.325, 0.425, 'IND')">india</button>
-      <button class="pooch-button" onclick="spinToLocation (2.315, -0.465, 'AUS')">australia</button>
-      <button class="pooch-button" onclick="spinToLocation (-1.634, 0.35, 'MEX')">mexico</button>
-      <button class="pooch-button" onclick="spinToLocation (0.03, 0.7, 'FRA')">france</button>
-    </div>
 
   </body>
 

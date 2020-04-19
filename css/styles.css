@@ -1,3 +1,6 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .pooch-stage {
   position: relative;
   width: 800px;
@@ -39,7 +42,7 @@
 }
 
 .pooch-popup1 {
-  width: 220px;
+  width: 200px;
   background-color: #FFF;
   padding: 10px;
   border-style: solid;
@@ -48,7 +51,7 @@
 }
 
 .pooch-popup1-title {
-  width: 220px;
+  width: 200px;
   float: left;
   font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -63,7 +66,7 @@
 }
 
 .pooch-popup1-head {
-  width: 220px;
+  width: 200px;
   float: left;
   margin-top: 3px;
   font: 13px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -96,9 +99,9 @@
 
 .pooch-button-container {
   position: relative;
-  width: 860px;
+  /* width: 860px; */
   height: 30px;
-  margin: 20px auto 8px auto;
+  /* margin: 20px auto 8px auto; */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -124,7 +127,7 @@
 }
 
 .pooch-button:hover {
-  background-color: #DDD;
+  background-color: rgba(233, 103, 17, 0.938);
   border-color: #999;
   color: #333;
   cursor: pointer;
@@ -212,3 +215,20 @@
   font-size: 13px;
   overflow: hidden;
 }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgba(7, 156, 201, 0.541);
+  width: 15vw;
+  padding: 10px;
+  color: #FFF;
+}
+header {
+  font-weight: bold;
+}
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+}
+.main    { flex: 3 0px; }
